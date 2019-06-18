@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Drag.cs" />
+     <Compile Include="Assets\GridSystem.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
      <None Include="Assets\topdown-shooter\Tilesheet\kenney_topdowntanksredux\Spritesheet\allSprites_retina.xml" />
      <None Include="Assets\topdown-shooter\Tilesheet\kenney_topdowntanksredux\Spritesheet\onlyObjects_retina.xml" />
