@@ -54,8 +54,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Drag.cs" />
+     <Compile Include="Assets\EnemyMovement.cs" />
      <Compile Include="Assets\GridSystem.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
+     <Compile Include="Assets\Spawner.cs" />
      <None Include="Assets\topdown-shooter\Tilesheet\kenney_topdowntanksredux\Spritesheet\allSprites_retina.xml" />
      <None Include="Assets\topdown-shooter\Tilesheet\kenney_topdowntanksredux\Spritesheet\onlyObjects_retina.xml" />
      <None Include="Assets\topdown-shooter\Spritesheet\spritesheet_characters.xml" />
