@@ -53,18 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Drag.cs" />
-     <Compile Include="Assets\EnemyMovement.cs" />
-     <Compile Include="Assets\GridSystem.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
-     <Compile Include="Assets\Spawner.cs" />
-     <None Include="Assets\topdown-shooter\Tilesheet\kenney_topdowntanksredux\Spritesheet\allSprites_retina.xml" />
-     <None Include="Assets\topdown-shooter\Tilesheet\kenney_topdowntanksredux\Spritesheet\onlyObjects_retina.xml" />
-     <None Include="Assets\topdown-shooter\Spritesheet\spritesheet_characters.xml" />
-     <None Include="Assets\topdown-shooter\Tilesheet\kenney_topdowntanksredux\Spritesheet\onlyObjects_default.xml" />
-     <None Include="Assets\topdown-shooter\Tilesheet\kenney_topdowntanksredux\License.txt" />
-     <None Include="Assets\topdown-shooter\License.txt" />
-     <None Include="Assets\topdown-shooter\Tilesheet\kenney_topdowntanksredux\Spritesheet\allSprites_default.xml" />
+     <Compile Include="Assets\Scripts\Drag.cs" />
+     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\GridSystem.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/salimabubakar/Desktop/Team Devil/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -644,6 +637,12 @@
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{540D2966-00A4-4422-13F0-66B1BD27A06B}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{38D60FEA-E3A1-B7DE-2343-2AC55D67C39C}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
