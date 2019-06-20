@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
     {
         timer--;
         if( timer < 0) {
-            Instantiate(enemy,new Vector3(transform.position.x + Random.Range(0, 5),transform.position.y + Random.Range(0, 5), 0 ), Quaternion.identity);
+            Instantiate(enemy,new Vector3(transform.position.x, transform.position.y + Random.Range(0, 5), 0 ), Quaternion.identity);
             timer = 50;
         }
     }
