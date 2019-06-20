@@ -53,10 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Collision.cs" />
      <Compile Include="Assets\Scripts\Drag.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\GridSystem.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\projectileShooter.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/salimabubakar/Desktop/Team Devil/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = 50;
+        timer = 100;
     }
 
     // Update is called once per frame
@@ -17,8 +17,8 @@ public class Spawner : MonoBehaviour
     {
         timer--;
         if( timer < 0) {
-            Instantiate(enemy,new Vector3(transform.position.x, transform.position.y + Random.Range(0, 5), 0 ), Quaternion.identity);
-            timer = 50;
+            Instantiate(enemy,new Vector3(transform.position.x, transform.position.y + Random.Range(-1, 2.5f), 0 ), Quaternion.identity);
+            timer = 100;
         }
     }
 }

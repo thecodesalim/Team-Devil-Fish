@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        print("Hey");
+       
     }
 
     // Update is called once per frame
@@ -28,8 +28,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        print("WOW!");
-        print(other.gameObject);
+     
     }
 
 }

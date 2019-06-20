@@ -7,6 +7,7 @@ public class GridSystem : MonoBehaviour {
     private GameObject wall;
     private Camera cam;
     private Vector3 mousePos;
+    public GameObject ballister;
 
     public float moveSpeed;
     public float offset = 0.05f;
@@ -21,9 +22,8 @@ public class GridSystem : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         mousePos = Input.mousePosition;
-       
+
         Vector3 pos = cam.ScreenToWorldPoint (new Vector3 (mousePos.x, mousePos.y, cam.nearClipPlane));
-        
 
         float tempX = (Mathf.Floor (pos.x / 0.16f) * 0.16f) + 0.08f;
 
@@ -32,15 +32,18 @@ public class GridSystem : MonoBehaviour {
 
         //The above works perfectly the issue lies below
 
-        if (Input.GetMouseButtonDown (0) && ((Camera.main.ScreenToWorldPoint (Input.mousePosition) - transform.position).magnitude <= offset)) {
-            if (following) {
-                following = false;
+        if (Input.GetMouseButtonDown (0)) {
+
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+            Vector2 mousePos2D = new Vector2 (mousePos.x, mousePos.y);
+
+            RaycastHit2D hit = Physics2D.Raycast (mousePos2D, Vector2.zero);
+
+            if (hit.collider != null) {
+                if (hit.collider.gameObject.tag == "Wall") {
+                    Instantiate (ballister, new Vector3 (tempX, tempY, cam.nearClipPlane), Quaternion.identity);
+                }
             } else {
-                following = true;
-            }
-        }
-        if (following) {
-            if (Input.GetMouseButtonDown (0)) {
                 Instantiate (obj, new Vector3 (tempX, tempY, cam.nearClipPlane), Quaternion.identity);
             }
         }
