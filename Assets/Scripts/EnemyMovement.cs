@@ -27,11 +27,9 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D other) {
         hit++;
-        print(hit);
         if(hit == 150) {
             hit = 0;
             Destroy(other.gameObject);
-            print("Destroyed");
         }
     }
 }
