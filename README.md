@@ -1,4 +1,4 @@
-# Team-Devil-Fish
+# Team Devil Fish
 Portsmouth Uni Game Jam 2019
 
 A Tower Defense game based on the themes
